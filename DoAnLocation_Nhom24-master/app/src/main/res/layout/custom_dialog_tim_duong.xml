@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:minWidth="300dp"
+    android:layout_margin="10dp"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tìm Đường"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:textColor="#FFF"
+        android:background="@color/colorBackgroud"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Chọn địa điểm xuất phát:"
+        android:textSize="15sp"
+        android:layout_marginTop="5dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="6"
+        >
+
+        <EditText
+            android:id="@+id/edChonDiaDiemXuatPhat"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:inputType="none"
+            />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fBtnChonDiaDiemXuatPhat"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:src="@drawable/ic_my_location_white"
+            app:fab_colorNormal="@color/colorBackgroud"
+            app:fab_colorPressed="@color/colorMenuPress"
+            app:fab_hideAnimation="@anim/fab_scale_down"
+            app:fab_label="Thêm địa điểm của bạn"
+            app:fab_shadowColor="#66000000"
+            app:fab_shadowRadius="4dp"
+            app:fab_shadowXOffset="1dp"
+            app:fab_shadowYOffset="3dp"
+            app:fab_showAnimation="@anim/fab_scale_up"
+            app:fab_showShadow="true"
+            app:fab_size="mini"
+            android:layout_weight="1"
+            ></com.github.clans.fab.FloatingActionButton>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Chọn địa điểm đến:"
+        android:textSize="15sp"
+        android:layout_marginTop="5dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="6"
+        >
+
+        <EditText
+            android:id="@+id/edChonDiaDiemDen"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fBtnChonDiaDiemDen"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:src="@drawable/ic_my_location_white"
+            app:fab_colorNormal="@color/colorBackgroud"
+            app:fab_colorPressed="@color/colorMenuPress"
+            app:fab_hideAnimation="@anim/fab_scale_down"
+            app:fab_label="Thêm địa điểm của bạn"
+            app:fab_shadowColor="#66000000"
+            app:fab_shadowRadius="4dp"
+            app:fab_shadowXOffset="1dp"
+            app:fab_shadowYOffset="3dp"
+            app:fab_showAnimation="@anim/fab_scale_up"
+            app:fab_showShadow="true"
+            app:fab_size="mini"
+            android:layout_weight="1"
+            ></com.github.clans.fab.FloatingActionButton>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/dialog_btnTimDuong"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Tìm Đường"
+            android:textAllCaps="false"
+            />
+
+        <Button
+            android:id="@+id/dialog_btnThoat"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            android:text="Thoát"
+            />
+    </LinearLayout>
+
+</LinearLayout>

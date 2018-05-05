@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ứng dụng giúp tìm nhà hàng quanh bạn"
+            android:textSize="18sp"
+            android:textColor="#01579B"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mô tả: "
+            style="@style/ThongTin"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" * Ứng dụng được phát triển nhằm hỗ trợ nhu cầu tìm các nhà hàng
+\n * Giúp người dùng có thể dễ dàng tìm địa điểm và đường đi đến đó"
+            style="@style/ThongTin"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Về đội ngũ phát triển:"
+            style="@style/ThongTin"
+            />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" * Nhóm 24 - DH Khoa học tự nhiên - DHQG Tp Hồ Chí Minh
+\n * Nhóm phát triển gồm 5 thành viên
+     \n + 1512500 Trần Văn Thanh
+     \n + 1512518 Phan Thị Thảo - Nhóm Trưởng
+     \n + 1512523 Nguyễn Hiếu Thắng
+     \n + 1512503 Nguyễn Phạm Hoàng Thái
+     \n + 1512658 Nguyễn Tố Uyên"
+            style="@style/ThongTin"
+            />
+
+        <Button
+            android:id="@+id/btnQuayLai"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_button_dialog"
+            android:layout_marginTop="10dp"
+            android:text="Quay lại"
+            android:textColor="#01579B"
+            android:layout_marginBottom="10dp"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

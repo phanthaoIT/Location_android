@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Đồ án location</string>
+
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+
+    <string name="home">Home</string>
+    <string name="location">Địa điểm của bạn</string>
+    <string name="y_tuong">Đóng góp ý kiến</string>
+    <string name="danh_gia">Đánh giá ứng dụng</string>
+    <string name="phan_hoi">Gửi phản hồi</string>
+    <string name="thong_tin">Thông tin nhóm phát triển</string>
+    <string name="tim_nha_hang">Tìm nhà hàng quanh bạn</string>
+    <string name="tim_cafe">Tìm quán cafe</string>
+    <string name="dc_ban_kinh_tim_kiem">Thay đổi phạm vi tìm</string>
+
+    <string name="API">AIzaSyD73ix-2OxsdM03JnoTj5gbxwbPRAJZSiM</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

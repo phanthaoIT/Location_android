@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imgDiaDiemUaThich"
+        android:layout_width="@dimen/imgHinhAnhDiaDiemWidth"
+        android:layout_height="@dimen/imgHinhAnhDiaDiemWidth"
+        android:src="@mipmap/ic_launcher"
+        android:layout_margin="10dp"
+        />
+
+    <TextView
+        android:id="@+id/txtTenCuaHang"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Cà phê bằng lăng tím"
+        android:textColor="#000"
+        android:textSize="18sp"
+        android:layout_toRightOf="@id/imgDiaDiemUaThich"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:id="@+id/txtViTri"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtTenCuaHang"
+        android:layout_toEndOf="@+id/imgDiaDiemUaThich"
+        android:layout_toRightOf="@+id/imgDiaDiemUaThich"
+        android:text="Đường Nguyễn Thị Minh Khai, TP HCM" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/imgLoaiCuaHang"
+        android:layout_alignBottom="@+id/txtViTri"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="17dp"
+        android:layout_marginRight="17dp"
+        android:src="@drawable/ic_local_cafe_black_24dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/imgDiaDiemUaThich"
+        android:background="#b9b3b3"
+        />
+</RelativeLayout>

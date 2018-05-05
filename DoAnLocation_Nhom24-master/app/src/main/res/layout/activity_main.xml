@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <fragment
+            android:id="@+id/map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".MapsActivity"
+            android:name="com.google.android.gms.maps.MapFragment"
+            />
+
+
+        <include layout="@layout/my_toolbar"/>
+
+        <com.github.clans.fab.FloatingActionButton
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            app:fab_label="Thêm địa điểm của bạn"
+            android:id="@+id/fBtnMyLocation"
+            android:src="@drawable/ic_my_location_white"
+            app:fab_colorNormal="@color/colorBackgroud"
+            app:fab_colorPressed="@color/colorMenuPress"
+            app:fab_showShadow="true"
+            app:fab_shadowColor="#66000000"
+            app:fab_shadowRadius="4dp"
+            app:fab_shadowXOffset="1dp"
+            app:fab_shadowYOffset="3dp"
+            app:fab_size="mini"
+            app:fab_showAnimation="@anim/fab_scale_up"
+            app:fab_hideAnimation="@anim/fab_scale_down"
+            android:layout_gravity="right"
+            android:layout_marginTop="?attr/actionBarSize"
+            android:layout_marginRight="10dp"
+            >
+        </com.github.clans.fab.FloatingActionButton>
+
+        <com.github.clans.fab.FloatingActionMenu
+            android:id="@+id/fabMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="8dp"
+            app:menu_showShadow="true"
+            app:menu_fab_label=""
+            app:menu_openDirection="up"
+            app:menu_backgroundColor="@android:color/transparent"
+            app:menu_labels_textColor="@color/texxtColor"
+            app:menu_labels_colorNormal="@color/colorBackgroud"
+            app:menu_colorNormal="@color/colorBackgroud"
+            app:menu_colorPressed="@color/colorMenuPress"
+            >
+
+            <com.github.clans.fab.FloatingActionButton
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                app:fab_label="Tìm Đường"
+                android:id="@+id/fabBtnTimDuong"
+                android:src="@drawable/ic_navigation_black_24dp"
+                app:fab_colorNormal="@color/colorBackgroud"
+                app:fab_colorPressed="@color/colorMenuPress"
+                app:fab_showShadow="true"
+                app:fab_shadowColor="#66000000"
+                app:fab_shadowRadius="4dp"
+                app:fab_shadowXOffset="1dp"
+                app:fab_shadowYOffset="3dp"
+                app:fab_size="normal"
+                app:fab_showAnimation="@anim/fab_scale_up"
+                app:fab_hideAnimation="@anim/fab_scale_down"
+                >
+            </com.github.clans.fab.FloatingActionButton>
+
+
+            <com.github.clans.fab.FloatingActionButton
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                app:fab_label="Thêm địa điểm của bạn"
+                android:id="@+id/fabBtnThemDiaDiem"
+                android:src="@drawable/ic_add_location"
+                app:fab_colorNormal="@color/colorBackgroud"
+                app:fab_colorPressed="@color/colorMenuPress"
+                app:fab_showShadow="true"
+                app:fab_shadowColor="#66000000"
+                app:fab_shadowRadius="4dp"
+                app:fab_shadowXOffset="1dp"
+                app:fab_shadowYOffset="3dp"
+                app:fab_size="normal"
+                app:fab_showAnimation="@anim/fab_scale_up"
+                app:fab_hideAnimation="@anim/fab_scale_down"
+                >
+            </com.github.clans.fab.FloatingActionButton>
+
+        </com.github.clans.fab.FloatingActionMenu>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="horizontal"
+            android:id="@+id/lnChonDiaDiem"
+            >
+
+            <Button
+                android:id="@+id/cddBtnThoat"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Thoát"
+                android:textAllCaps="false"
+                />
+
+            <Button
+                android:id="@+id/cddBtnOk"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Chọn"
+                android:textAllCaps="false"
+                />
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+    <android.support.design.widget.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:headerLayout="@layout/layout_header_nav_drawer"
+        app:menu="@menu/nav_menu"
+        android:id="@+id/navView"
+        app:itemIconTint="@drawable/drawer_item_choose"
+        app:itemTextColor="@drawable/drawer_item_choose"
+        android:layout_gravity ="start"
+        >
+
+    </android.support.design.widget.NavigationView>
+
+</android.support.v4.widget.DrawerLayout>
